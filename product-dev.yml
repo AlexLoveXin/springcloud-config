@@ -16,4 +16,4 @@ mybatis-plus:
   mapper-locations: classpath:com/imooc/product/mapper/*.xml
 logging:
   level:
-    com.imooc: info
+    com.imooc: debug
