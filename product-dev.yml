@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: abcd1234
+    url: jdbc:mysql://localhost:3306/springcloud_product?useSSL=true&characterEncoding=utf-8
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+mybatis-plus:
+  type-aliases-package: com.imooc.product.entity
+  mapper-locations: classpath:com/imooc/product/mapper/*.xml
+logging:
+  level:
+    com.imooc: info
