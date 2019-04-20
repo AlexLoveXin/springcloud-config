@@ -6,6 +6,21 @@ spring:
     url: jdbc:mysql://localhost:3306/springcloud_order?useSSL=true&characterEncoding=utf-8
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  cloud:
+    stream:
+      bindings:
+        input:
+          group: order
+          content-type: application/json
+  redis:
+    host: localhost
+    port: 6379
+    password: abcd1234
 mybatis-plus:
   type-aliases-package: com.imooc.order.entity
   mapper-locations: classpath:com/imooc/order/mapper/*.xml
