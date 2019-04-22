@@ -1,6 +1,13 @@
 zuul:
   routes:
-    myProduct2:
-      path: /myProduct2/**
+    myProduct:
+      path: /myProduct/**
       serviceId: product
-env: dev
+      #sensitiveHeaders:
+#  ignored-patterns:
+#    - /myProduct/product/listAllUp
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
