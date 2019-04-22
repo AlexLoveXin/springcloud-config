@@ -30,4 +30,4 @@ product:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
 logging:
   level:
-    com.imooc: info
+    com.imooc: error
