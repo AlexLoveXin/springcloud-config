@@ -1,7 +1,7 @@
 zuul:
   routes:
-    myProduct2:
-      path: /myProduct2/**
+    myProduct3:
+      path: /myProduct3/**
       serviceId: product
       #sensitiveHeaders:
 #  ignored-patterns:
