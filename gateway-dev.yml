@@ -6,6 +6,7 @@ zuul:
       sensitiveHeaders:
 #  ignored-patterns:
 #    - /myProduct/product/listAllUp
+  sensitive-headers:
 management:
   endpoints:
     web:
