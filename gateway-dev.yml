@@ -1,6 +1,6 @@
 zuul:
   routes:
-    myProduct:
+    myProduct2:
       path: /myProduct2/**
       serviceId: product
       #sensitiveHeaders:
